@@ -7,13 +7,11 @@
     "express": "^4.15.3"
   },
   "devDependencies": {
-    "csv-parser": "^1.11.0",
     "eslint": "^4.4.1",
     "eslint-config-eslint": "^4.0.0",
     "eslint-plugin-chai-friendly": "^0.3.6",
     "mocha": "^3.5.0",
     "neat-csv": "^2.1.0",
-    "node-csv": "^0.1.2",
     "should": "^11.2.1"
   },
   "scripts": {
