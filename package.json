@@ -1,5 +1,5 @@
 {
-  "name": "laundry-company",
+  "name": "company-laundry",
   "version": "0.1.0",
   "description": "resolve strings to canonical name",
   "main": "app.js",
