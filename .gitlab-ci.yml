@@ -1,0 +1,32 @@
+stages:
+  - test
+  - deploy
+
+cache:
+  paths:
+  - node_modules/
+
+test:
+  image: node:alpine
+  stage: test
+  tags:
+   - docker
+  variables:
+    NODE_ENV: 'test'
+  script:
+   - npm install --silent
+   - npm run test
+
+deploy staging:
+  image: tmaier/dpl
+  type: deploy
+  stage: deploy
+  tags:
+    - heroku
+  only:
+    - master
+  environment:
+    name: stageing
+    url: https://laundry-company.herokuapp.com
+  script:
+    - dpl --provider=heroku --app=laundry-company --api-key=$HEROKU_API_KEY
