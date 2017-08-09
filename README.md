@@ -1,8 +1,10 @@
 # lavanderia empresarial
 
+[![build status](http://gitlab.rindecuentas.org/kevin/company-laundry/badges/master/build.svg)](http://gitlab.rindecuentas.org/kevin/company-laundry/commits/master)
+
 ## tira una cadena de caracters
 
-    http://localhost:9000/Alianzas Comerciales Casa S.a. De C.v.
+    https://laundry-company.herokuapp.com/Alianzas Comerciales Casa S.a. De C.v.
 
 ## recibe otra cadena en cambio
 
