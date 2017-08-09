@@ -6,7 +6,7 @@
 
     https://laundry-company.herokuapp.com/Alianzas Comerciales Casa S.a. De C.v.
 
-## recibe otra cadena en cambio
+## te la cambiamos por otra
 
     Alianzas Comerciales Casa, S.A. de C.V.
 
