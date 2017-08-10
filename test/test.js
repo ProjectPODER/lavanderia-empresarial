@@ -7,7 +7,7 @@ const readFile = fs.createReadStream(`${__dirname}/data.csv`);
 const readCsv = neatCsv(readFile);
 
 describe('clean up the dirty laundry', () => {
-  it('should generate the correct response', () => (
+  it('String returned from `clean()` should match that declared in CSV', () => (
     readCsv.then(data => {
       data.forEach(o => {
         const clean = laundry(o.dirty);
