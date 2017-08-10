@@ -4,6 +4,9 @@ stages:
   - test
   - deploy
 
+before_script:
+  - npm install --silent
+
 cache:
   paths:
   - node_modules/
@@ -15,7 +18,6 @@ lint:
   variables:
     NODE_ENV: 'development'
   script:
-   - npm install --silent
    - npm run lint
 
 test:
@@ -26,7 +28,6 @@ test:
   variables:
     NODE_ENV: 'development'
   script:
-   - npm install --silent
    - npm run test
 
 deploy staging:
