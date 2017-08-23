@@ -4,6 +4,8 @@
   "description": "resolve strings to canonical name",
   "main": "app.js",
   "dependencies": {
+    "command-line-args": "^4.0.7",
+    "command-line-usage": "^4.0.1",
     "express": "^4.15.3",
     "normalize-space": "^1.0.2"
   },
