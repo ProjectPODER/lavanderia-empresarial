@@ -16,9 +16,9 @@
 ## Boot as REST API
 
 You can also boot as a REST API from the cli. Then you can serve it on your network
-and people can clean there data.
+and people can clean their data.
 
-    node apps -e
+    node app.js -e
 
 ### tira una cadena de caracters
 
