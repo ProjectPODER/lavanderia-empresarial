@@ -8,9 +8,10 @@
 
 ## Usage
 
-    const document = { some data };
-    const clean = require('company-laundry');
-    const cleanDocument = clean(document);
+    const dirty = "Alianzas Comerciales Casa S.a. De C.v.";
+    const laundry = require('company-laundry');
+    laundry(dirty);
+    > Alianzas Comerciales Casa, S.A. de C.V.
 
 ## Boot as REST API
 
