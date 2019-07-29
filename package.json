@@ -10,12 +10,12 @@
     "eslint": "^4.4.1",
     "eslint-config-eslint": "^4.0.0",
     "eslint-plugin-chai-friendly": "^0.3.6",
-    "mocha": "^3.5.0",
+    "mocha": "^6.1.4",
     "neat-csv": "^2.1.0",
     "should": "^11.2.1"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha test/*.js",
+    "test": "./node_modules/.bin/mocha --exit test/*.js",
     "lint": "./node_modules/.bin/eslint '**/*.js'",
     "start": "node app.js",
     "watch": "nodemon app.js"
