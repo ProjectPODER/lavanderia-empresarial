@@ -1,8 +1,6 @@
 # lavanderia empresarial
 
-[![build status](http://gitlab.rindecuentas.org/kevin/company-laundry/badges/master/build.svg)](http://gitlab.rindecuentas.org/kevin/company-laundry/commits/master)
-
-## Installation
+## Install
 
     npm install git+ssh://git@gitlab.rindecuentas.org:2203/kevin/company-laundry.git
 
