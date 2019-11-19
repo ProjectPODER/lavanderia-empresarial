@@ -1,6 +1,6 @@
 {
   "name": "company-laundry",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "resolve strings to canonical name",
   "main": "app.js",
   "dependencies": {
