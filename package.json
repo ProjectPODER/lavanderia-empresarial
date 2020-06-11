@@ -1,7 +1,7 @@
 {
   "name": "company-laundry",
-  "version": "0.3.7",
-  "description": "Resolve strings to canonical name and other fun things.",
+  "version": "0.4.0",
+  "description": "Resolve strings to canonical name.",
   "main": "app.js",
   "dependencies": {
     "diacritics": "^1.3.0",
@@ -10,12 +10,14 @@
     "normalize-space": "^1.0.2"
   },
   "devDependencies": {
+    "csv-string": "^4.0.1",
+    "event-stream": "^4.0.1",
     "neat-csv": "^2.1.0",
     "should": "^11.2.1"
   },
   "scripts": {
     "start": "node app.js",
-    "watch": "nodemon app.js"
+    "test": "node test/test.js"
   },
   "keywords": [
     "business",

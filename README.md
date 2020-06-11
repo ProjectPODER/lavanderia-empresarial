@@ -2,31 +2,35 @@
 
 ## Install
 
-    npm install git+ssh://git@gitlab.rindecuentas.org:2203/kevin/company-laundry.git
+    npm install git+http://git@gitlab.rindecuentas.org/equipo-qqw/company-laundry.git
 
 ## Usage
 
-    const dirty = "Alianzas Comerciales Casa S.a. De C.v.";
-    const laundry = require('company-laundry');
-    laundry(dirty);
-    > Alianzas Comerciales Casa, S.A. de C.V.
+```
+const dirty = "Alianzas Comerciales Casa S.a. De C.v.";
+const laundry = require('company-laundry');
 
-## Boot as REST API
+laundry.launder(dirty);
+> Alianzas Comerciales Casa, S.A. de C.V.
 
-You can also boot as a REST API from the cli. Then you can serve it on your network
-and people can clean their data.
+laundry.simpleName(laundry.launder(dirty))
+>> alianzas-comerciales-casa-sa-de-cv
 
-    node app.js -e
+laundry.isCompany(dirty)
+>> true
 
-### tira una cadena de caracters
+laundry.companyType(dirty)
+>> profit
+```
 
-    https://laundry-company.herokuapp.com/Alianzas Comerciales Casa S.a. De C.v.
+## Test
 
-### te la cambiamos por otra
+```
+cat test/testdata.csv | npm test
+```
 
-    Alianzas Comerciales Casa, S.A. de C.V.
 
-## Ayudanos lavar los nombres de las empresas!
+## Ayúdanos a lavar los nombres de las empresas!
 
   * agregando empresas a la lista [nombres bajo prueba](test/data.csv)
   * mandando parches para [los regex que arreglan los nombres](lib/laundry.js)
